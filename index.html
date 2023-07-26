@@ -25,17 +25,17 @@
     <!-- custom element  -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: '#F85559',
-                secondary: '#121212',
-                gray: '#12121299'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F85559',
+                        secondary: '#121212',
+                        gray: '#12121299'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <style>
         /* font-family: 'Lato', sans-serif;
@@ -47,8 +47,105 @@
     </style>
 </head>
 
-<body class="font-lato">
-    <h1>hi</h1>
+<body class="font-lato md:max-w-[80%] mx-auto ">
+    <header>
+        <nav class=" bg-primary rounded-full px-8 mt-5 mb-14">
+            <div class=" flex flex-row justify-between items-center  py-4 px-2">
+                <div class="">
+                    <div class="">
+                        <ul class=" flex flex-row gap-5 ">
+                            <li><a class="text-[18px] text-white font-medium">Home</a></li>
+                            <li><a class="text-[18px] text-white font-medium">About Us</a></li>
+                            <li><a class="text-[18px] text-white font-medium">Shop</a></li>
+                            <li><a class="text-[18px] text-white font-medium">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <a class=" normal-case text-xl flex flex-row items-center gap-2">
+                        <img src="./images/logo.png" alt="">
+                        <h2 class="text-lime-500 text-[40px] font-extrabold">Fruit Burst</h2>
+                    </a>
+                </div>
+                <div class="">
+                    <div
+                        class="input input input-bordered rounded-full w-sm px-5 flex flex-row items-center justify-between">
+                        <input type="text" placeholder="Search here"
+                            class=" flex-1 gap-4 me-5 px-2 rounded-rull outline-none bg-none" />
+                        <button class="rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="banner">
+            <div class="banner-container">
+                <div class="carousel w-full">
+
+                    
+                    <!-- slide 1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="/images/banner1.png" class="w-full" />
+                      <div class=" bg-black h-full w-full px-5 bg-opacity-30 rounded-lg absolute flex items-center justify-between transform -translate-y-1/2  top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <div class="text-center">
+                            <h1 class="text-center text-white text-7xl font-bold mb-6 text-shadow ">Exotic tastes at your <br>doorstep</h1>
+                            <p class=" text-xl text-white font-medium text-center">We supply highly quality organic products</p>
+                            <button class="bg-primary px-7 py-5 rounded-xl mt-8 text-white text-xl font-extrabold ">Shop Now</button>
+                        </div>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <!-- slide 2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="/images/banner2.png" class="w-full" />
+                        <div class="bg-black h-full w-full px-5 bg-opacity-30 rounded-lg absolute flex items-center justify-between transform -translate-y-1/2top-1/2">
+                          <a href="#slide1" class="btn btn-circle">❮</a> 
+                          <div class="text-center">
+                              <h1 class="text-center text-white text-7xl font-bold mb-6">Exotic tastes at your <br>doorstep</h1>
+                              <p class="text-xl text-white font-medium text-center">We supply highly quality organic products</p>
+                              <button class="bg-primary px-7 py-5 rounded-xl mt-8 text-white text-xl font-extrabold ">Shop Now</button>
+                          </div>
+                          <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                      </div>  
+                    <!-- slide 3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="/images/banner3.png" class="w-full" />
+                        <div class="bg-black h-full w-full px-5 bg-opacity-30 rounded-lg absolute flex items-center justify-between transform -translate-y-1/2  top-1/2">
+                          <a href="#slide2" class="btn btn-circle">❮</a> 
+                          <div class="text-center">
+                              <h1 class="text-center text-white text-7xl font-bold mb-6">Exotic tastes at your <br>doorstep</h1>
+                              <p class="text-xl text-white font-medium text-center">We supply highly quality organic products</p>
+                              <button class="bg-primary px-7 py-5 rounded-xl mt-8 text-white text-xl font-extrabold ">Shop Now</button>
+                          </div>
+                          <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                      </div> 
+                    <!-- slide 4 -->
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="/images/banner4.png" class="w-full" />
+                        <div class="bg-black h-full w-full px-5 bg-opacity-30 rounded-lg absolute flex items-center justify-between transform -translate-y-1/2 top-1/2">
+                          <a href="#slide3" class="btn btn-circle">❮</a> 
+                          <div class="text-center">
+                              <h1 class="text-center text-white text-7xl font-bold mb-6">Exotic tastes at your <br>doorstep</h1>
+                              <p class="text-xl text-white font-medium text-center">We supply highly quality organic products</p>
+                              <button class="bg-primary px-7 py-5 rounded-xl mt-8 text-white text-xl font-extrabold ">Shop Now</button>
+                          </div>
+                          <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                      </div> 
+                  </div>
+            </div>
+        </section>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
