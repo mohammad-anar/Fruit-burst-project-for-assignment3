@@ -47,8 +47,8 @@
     </style>
 </head>
 
-<body class="font-lato max-w-[95%] md:max-w-7xl md:w-[80%] mx-auto ">
-    <header>
+<body class="font-lato">
+    <header class="font-lato max-w-[95%] md:max-w-7xl md:w-[80%] mx-auto ">
         <nav class=" lg:bg-primary rounded-full px-2 lg:px-6 lg:mt-5 lg:mb-14">
             <div class=" flex flex-row justify-between items-center  py-4 px-2">
                 <div class="hidden lg:block">
@@ -237,7 +237,7 @@
         </section>
 
     </header>
-    <main>
+    <main class="font-lato max-w-[95%] md:max-w-7xl md:w-[80%] mx-auto ">
         <!-- deal of the day starts here  -->
         <section id="deal-of-the-day">
             <div class="deal-container my-32">
@@ -881,10 +881,40 @@
                 </div>
             </div>
         </section>
-
+       
 
     </main>
-    <footer></footer>
+     <!-- footer section added  -->
+     <footer class="footer footer-center p-10 py-24 mt-16 md:mt-32 bg-black text-primary-content">
+        <div>
+            <!-- footer logo -->
+            <div class="">
+                <a class=" normal-case text-xl flex flex-row items-center gap-2">
+                    <img class="w-[40px] md:w-[45px] lg:w-[50px]" src="./images/logo.png" alt="">
+                    <h2 class="text-lime-500 text-2xl md:text-2xl lg:text-3xl font-extrabold ">Fruit Burst</h2>
+                </a>
+            </div>
+        </div> 
+        <!-- footer links -->
+        <div class="grid grid-cols-3 md:grid-cols-6 list-none gap-3">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">All Fruits</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">My Account</a></li>
+        </div>
+        <div>
+          <div class="grid grid-cols-3 md:grid-cols-6 gap-5">
+            <i class=" text-3xl cursor-pointer fa-brands fa-twitter"></i>
+            <i class=" text-3xl cursor-pointer fa-brands fa-facebook-f"></i>
+            <i class=" text-3xl cursor-pointer fa-brands fa-youtube"></i>
+            <i class=" text-3xl cursor-pointer fa-brands fa-linkedin-in"></i>
+            <i class=" text-3xl cursor-pointer fa-brands fa-instagram"></i>
+            <i class=" text-3xl cursor-pointer fa-brands fa-apple"></i>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>
